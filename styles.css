@@ -133,3 +133,8 @@ footer{padding:65px 5vw 30px;max-width:var(--max);margin:auto}
 
 /* Keep product photography in its original color; the interface stays monochrome around it. */
 .product-image,.detail-main-image{background:#111}.product-badge{box-shadow:0 4px 14px rgba(0,0,0,.08)}
+
+/* Light controls on the dark MUSHTBA interface */
+button,.btn,.button,.cta,.filter-btn,.sort-btn,.search-btn,.cart-btn,.nav-cta,.add-to-cart,.buy-now{background:#fff;color:#050505;border-color:#fff}
+button:hover,.btn:hover,.button:hover,.cta:hover,.filter-btn:hover,.sort-btn:hover,.search-btn:hover,.cart-btn:hover,.nav-cta:hover,.add-to-cart:hover,.buy-now:hover{background:#e9e9e9;color:#050505}
+input,select,textarea{background:#fff;color:#050505;border-color:#fff}
