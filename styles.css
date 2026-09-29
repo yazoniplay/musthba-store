@@ -35,3 +35,26 @@ body:after{content:"";position:fixed;inset:0;pointer-events:none;z-index:100;bac
 @keyframes pulseGlow{0%,100%{transform:scale(1);opacity:.75}50%{transform:scale(1.08);opacity:1}}
 @keyframes modalIn{from{opacity:0;transform:translateY(18px) scale(.98)}to{opacity:1;transform:none}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* --- product detail --- */
+.product-detail{max-width:1400px;margin:auto;padding:70px 5vw 120px;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(360px,.75fr);gap:8vw;align-items:center;min-height:760px}
+.detail-media{background:#0d0d0d;aspect-ratio:4/5;overflow:hidden;border:1px solid #222;animation:heroIn .8s both}
+.detail-media img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s cubic-bezier(.2,.8,.2,1)}
+.detail-media:hover img{transform:scale(1.035)}
+.detail-copy{animation:rise .8s .08s both}
+.detail-copy h1{font-size:clamp(48px,6vw,88px);line-height:.88;letter-spacing:-.085em;margin:0 0 20px;max-width:650px}
+.detail-price{font-size:20px;margin-bottom:30px}
+.detail-desc{color:#929292;line-height:1.75;max-width:540px;font-size:14px}
+.detail-meta{display:flex;gap:18px;flex-wrap:wrap;margin:30px 0;padding:20px 0;border-top:1px solid #252525;border-bottom:1px solid #252525;color:#777;font-size:10px;text-transform:uppercase;letter-spacing:.1em}
+.size-label{font-size:9px;color:#777;letter-spacing:.15em;font-weight:700;margin-bottom:10px}
+.size-grid{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
+.size{min-width:48px;padding:11px 14px;border:1px solid #2b2b2b;border-radius:2px;color:#aaa;font-size:11px;transition:.25s}
+.size:hover,.size.selected{background:#f4f4f2;color:#050505;border-color:#f4f4f2}
+.no-size{color:#777;font-size:11px}
+.detail-actions{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.detail-actions .btn{justify-content:center;padding:17px}
+.btn-dark{background:#181818;border:1px solid #333;color:#fff}
+.btn-dark:hover{background:#222;border-color:#555}
+.detail-note{font-size:9px;color:#5e5e5e;margin-top:16px;text-align:center;letter-spacing:.08em;text-transform:uppercase}
+.search-result{text-decoration:none;color:inherit}
+@media(max-width:800px){.product-detail{grid-template-columns:1fr;padding:35px 20px 80px;gap:45px}.detail-copy h1{font-size:52px}.detail-actions{grid-template-columns:1fr}}
