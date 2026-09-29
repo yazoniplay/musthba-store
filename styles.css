@@ -126,3 +126,5 @@ footer{padding:65px 5vw 30px;max-width:var(--max);margin:auto}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 
 .cart-line{display:flex;align-items:center;justify-content:space-between;margin-top:10px}.cart-line b{font-size:11px}.qty{display:flex;align-items:center;border:1px solid #333}.qty button{width:28px;height:28px;font-size:16px}.qty span{min-width:28px;text-align:center;font-size:10px}.cart-row .remove{display:block}
+
+.brand-logo-image{display:block;width:min(170px,55%);height:90px;object-fit:contain;object-position:left center;margin-bottom:34px;filter:invert(1);transition:transform .35s ease,opacity .35s ease}.brand-panel.ua .brand-logo-image{filter:none}.brand-panel:hover .brand-logo-image{transform:translateY(-4px);opacity:.9}
