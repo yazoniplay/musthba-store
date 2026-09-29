@@ -179,3 +179,48 @@ footer{padding:65px 5vw 30px;max-width:var(--max);margin:auto}
 .nav-mobile a{padding:15px;border-bottom:1px solid #222;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em}
 .nav-mobile a:last-child{border-bottom:0}
 }
+
+/* MUSHTBA retail homepage + cookie consent */
+.retail-hero{max-width:var(--max);margin:auto;min-height:650px;display:grid;grid-template-columns:1.35fr .65fr;border-bottom:1px solid var(--line)}
+.retail-hero-copy{padding:105px 5vw 80px;display:flex;flex-direction:column;justify-content:center}
+.retail-hero h1{font-size:clamp(58px,8vw,118px);line-height:.82;letter-spacing:-.09em;margin:14px 0 28px}
+.retail-hero h1 em{font-style:normal}
+.retail-hero-copy>p:not(.eyebrow){max-width:540px;color:#999;font-size:14px;line-height:1.7;margin:0 0 28px}
+.retail-hero-panel{margin:22px;min-height:600px;background:linear-gradient(145deg,#181818,#070707);border:1px solid #292929;padding:30px;display:flex;flex-direction:column;justify-content:space-between}
+.retail-hero-panel span,.promo-card span{font-size:9px;letter-spacing:.16em;color:#888;font-weight:700}
+.retail-hero-panel strong{font-size:clamp(42px,5vw,76px);line-height:.82;letter-spacing:-.08em}
+.retail-hero-panel a{color:#fff;font-size:11px;text-transform:uppercase;letter-spacing:.1em}
+.hero-benefits{display:flex;gap:18px;flex-wrap:wrap;color:#777;font-size:10px;text-transform:uppercase;letter-spacing:.08em}
+.category-strip{max-width:var(--max);margin:auto;display:grid;grid-template-columns:repeat(3,1fr);border-bottom:1px solid var(--line)}
+.category-strip a{padding:28px 5vw;border-right:1px solid var(--line);transition:.2s}
+.category-strip a:last-child{border-right:0}
+.category-strip a:hover{background:#0d0d0d}
+.category-strip span{display:block;color:#666;font-size:9px;margin-bottom:20px}
+.category-strip strong{display:block;font-size:18px;letter-spacing:-.04em}
+.category-strip small{display:block;color:#777;font-size:11px;margin-top:7px}
+.retail-section{padding-top:85px}
+.promo-row{max-width:var(--max);margin:20px auto 90px;display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:0 5vw}
+.promo-card{min-height:310px;padding:32px;display:flex;flex-direction:column;justify-content:space-between;transition:.25s}
+.promo-card:hover{transform:translateY(-3px)}
+.promo-dark{background:#101010;border:1px solid #292929;color:#fff}
+.promo-light{background:#f2f2f2;color:#080808}
+.promo-light span,.promo-light small{color:#666}
+.promo-card strong{font-size:clamp(30px,4vw,54px);line-height:.85;letter-spacing:-.07em}
+.promo-card small{font-size:11px;line-height:1.5;max-width:330px}
+.cookie-banner{position:fixed;left:18px;right:18px;bottom:18px;z-index:100;background:rgba(12,12,12,.96);border:1px solid #303030;box-shadow:0 25px 80px rgba(0,0,0,.6);padding:22px 24px;display:flex;align-items:center;justify-content:space-between;gap:30px;backdrop-filter:blur(18px);transition:.25s}
+.cookie-banner.hide{opacity:0;transform:translateY(20px);pointer-events:none}
+.cookie-banner strong{display:block;font-size:16px;margin:4px 0}
+.cookie-banner p:not(.eyebrow){color:#858585;font-size:11px;line-height:1.55;margin:5px 0 0;max-width:700px}
+.cookie-actions{display:flex;gap:8px;flex-shrink:0}
+.cookie-actions button{border:1px solid #333;background:#181818;color:#fff;padding:12px 18px;font-size:10px;text-transform:uppercase;letter-spacing:.1em;font-weight:700;cursor:pointer}
+.cookie-actions .cookie-accept{background:#fff;color:#050505;border-color:#fff}
+@media(max-width:800px){
+.retail-hero{display:block;min-height:0}
+.retail-hero-copy{padding:70px 20px 45px}
+.retail-hero-panel{margin:0 12px 12px;min-height:390px}
+.category-strip{grid-template-columns:1fr}
+.category-strip a{border-right:0;border-bottom:1px solid var(--line);padding:23px 20px}
+.promo-row{grid-template-columns:1fr;padding:0 12px;margin-bottom:55px}
+.cookie-banner{left:10px;right:10px;bottom:10px;display:block;padding:20px}
+.cookie-actions{margin-top:15px}.cookie-actions button{flex:1}
+}
