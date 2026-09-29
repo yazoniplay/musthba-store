@@ -170,3 +170,12 @@ footer{padding:65px 5vw 30px;max-width:var(--max);margin:auto}
 .info-page{padding:70px 20px 100px}.info-page h1{font-size:62px;margin-bottom:55px}
 .info-block{grid-template-columns:1fr;gap:14px}
 }
+
+.nav-toggle,.nav-mobile{display:none}
+@media(max-width:800px){
+.nav-toggle{display:block;font-size:24px;color:#eee;margin-left:2px}
+.nav-mobile{display:flex;position:fixed;left:12px;right:12px;top:122px;z-index:40;background:#0b0b0b;border:1px solid #292929;box-shadow:0 25px 70px rgba(0,0,0,.55);padding:12px;flex-direction:column;opacity:0;pointer-events:none;transform:translateY(-8px);transition:.22s}
+.nav-mobile.open{opacity:1;pointer-events:auto;transform:none}
+.nav-mobile a{padding:15px;border-bottom:1px solid #222;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em}
+.nav-mobile a:last-child{border-bottom:0}
+}
