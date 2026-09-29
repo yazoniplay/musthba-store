@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="MUSTHBA — premium sportswear from Nike and Under Armour.">
+<title>MUSTHBA — Performance, refined.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="announcement">FREE SHIPPING ON ORDERS OVER 750 KR <span>·</span> EASY RETURNS</div>
+<header class="nav">
+<a class="logo" href="#">MUSTHBA<span>®</span></a>
+<nav><a href="#shop">Shop</a><a href="#brands">Brands</a><a href="#featured">Featured</a></nav>
+<div class="nav-actions"><button class="icon-btn" id="searchBtn" aria-label="Search">⌕</button><button class="cart-btn" id="cartBtn">Cart <b id="cartCount">0</b></button></div>
+</header>
+<main>
+<section class="hero">
+<div class="hero-copy"><p class="eyebrow">THE NEW STANDARD</p><h1>MOVE<br><em>DIFFERENT.</em></h1><p class="hero-sub">Premium Nike and Under Armour essentials selected for training, competition and everyday movement.</p><div class="hero-actions"><a class="btn btn-light" href="#shop">Shop collection</a><a class="text-link" href="#brands">Explore brands ↗</a></div></div>
+<div class="hero-visual"><div class="hero-glow"></div><div class="hero-card"><span>FW / 26</span><strong>PERFORMANCE<br>IN MOTION</strong></div></div>
+</section>
+<section class="marquee"><div>NIKE <i>•</i> UNDER ARMOUR <i>•</i> TRAIN HARD <i>•</i> MOVE FREE <i>•</i> NIKE <i>•</i> UNDER ARMOUR <i>•</i></div></section>
+<section class="section" id="featured"><div class="section-head"><div><p class="eyebrow">CURATED FOR YOU</p><h2>Featured</h2></div><a class="text-link" href="#shop">View all ↗</a></div><div class="product-grid" id="featuredGrid"></div></section>
+<section class="brand-split" id="brands">
+<div class="brand-panel nike"><div><p class="eyebrow">01 / NIKE</p><h2>JUST<br>DO IT.</h2><a class="btn btn-light" href="#shop" data-brand="Nike">Shop Nike</a></div></div>
+<div class="brand-panel ua"><div><p class="eyebrow">02 / UNDER ARMOUR</p><h2>PROTECT<br>THIS HOUSE.</h2><a class="btn btn-light" href="#shop" data-brand="Under Armour">Shop Under Armour</a></div></div>
+</section>
+<section class="section shop-section" id="shop"><div class="section-head"><div><p class="eyebrow">THE COLLECTION</p><h2>Shop all</h2></div><div class="filters"><button class="filter active" data-filter="All">All</button><button class="filter" data-filter="Nike">Nike</button><button class="filter" data-filter="Under Armour">Under Armour</button></div></div><div class="product-grid" id="productGrid"></div></section>
+<section class="service-strip"><div><b>01</b><strong>AUTHENTIC PRODUCTS</strong><span>Carefully sourced from authorized supply.</span></div><div><b>02</b><strong>FAST DELIVERY</strong><span>Quick shipping across Sweden.</span></div><div><b>03</b><strong>EASY RETURNS</strong><span>Simple returns when things don't fit.</span></div></section>
+</main>
+<footer><div class="footer-top"><a class="logo" href="#">MUSTHBA<span>®</span></a><p>Performance, refined.</p></div><div class="footer-bottom"><span>© 2026 MUSTHBA</span><span>NIKE · UNDER ARMOUR</span></div></footer>
+<div class="overlay" id="overlay"></div>
+<aside class="cart-drawer" id="cartDrawer"><div class="drawer-head"><h3>Your cart</h3><button id="closeCart">×</button></div><div id="cartItems" class="cart-items"></div><div class="cart-foot"><div><span>Subtotal</span><strong id="cartTotal">0 kr</strong></div><button class="checkout">Checkout <span>→</span></button><small>Taxes and shipping calculated at checkout.</small></div></aside>
+<div class="search-modal" id="searchModal"><div class="search-box"><button id="closeSearch">×</button><p class="eyebrow">SEARCH THE COLLECTION</p><input id="searchInput" placeholder="Search products..." autofocus><div id="searchResults"></div></div></div>
+<script src="app.js"></script>
+</body></html>
