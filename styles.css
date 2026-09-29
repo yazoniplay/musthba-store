@@ -236,8 +236,8 @@ footer{padding:65px 5vw 30px;max-width:var(--max);margin:auto}
 
 /* Clean retail homepage */
 .home-campaign{max-width:1440px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:2px;background:#000}
-.home-campaign-tile{position:relative;height:min(68vh,720px);min-height:520px;overflow:hidden;background:#111}
-.home-campaign-tile img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
+.home-campaign-tile{position:relative;aspect-ratio:1.15/1;min-height:0;overflow:hidden;background:#111}
+.home-campaign-tile img{width:100%;height:100%;object-fit:cover;object-position:center;display:block;transition:transform .5s}
 .home-campaign-tile:hover img{transform:scale(1.025)}
 .home-campaign-tile:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(0,0,0,.72));pointer-events:none}
 .home-campaign-tile>div{position:absolute;left:32px;right:32px;bottom:30px;z-index:2;color:#fff}
@@ -254,7 +254,7 @@ footer{padding:65px 5vw 30px;max-width:var(--max);margin:auto}
 .home-service-row strong{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.08em}
 .home-service-row span{display:block;color:#777;font-size:10px;margin-top:6px}
 @media(max-width:800px){
-.home-campaign{grid-template-columns:1fr}.home-campaign-tile{height:62vh;min-height:440px}
+.home-campaign{grid-template-columns:1fr}.home-campaign-tile{aspect-ratio:1/1;min-height:0}
 .home-campaign-tile>div{left:20px;right:20px;bottom:22px}
 .home-shopbar a{padding:16px 20px}
 .home-products{padding-top:50px;padding-bottom:55px}
